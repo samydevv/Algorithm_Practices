@@ -6,13 +6,7 @@ vector<string> split_string(string);
 
 // Complete the squares function below.
 int squares(int a, int b) {
-    int counter=0;
-    for (int i= a; i<=b;i++){
-        for (int j=1; j*j<=i;j++){
-            if (j*j==i)
-                counter++;
-        }
-    }
+    int counter=(floor(sqrt(b)) - ceil(sqrt(a)) + 1); 
     return counter;
 }
 
